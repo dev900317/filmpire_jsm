@@ -1,13 +1,22 @@
 import React from 'react';
+import { CssBaseline } from '@mui/material';
+import { Route, Routes } from 'react-router-dom';
 
-const App = () => {
-  const counter = 1;
+import { Actors, Movies, MovieInformation, Profile, NavBar } from '.';
 
-  return (
-    <div>
-      <h1>App {counter}</h1>
-    </div>
-  );
-};
+const App = () => (
+  <div>
+    <CssBaseline />
+    <NavBar />
+    <main>
+      <Routes>
+        <Route path="/" element={<Movies />} />
+        <Route path="/movie/:id" element={<MovieInformation />} />
+        <Route path="/profile/:id" element={<Profile />} />
+        <Route path="/actors/:id" element={<Actors />} />
+      </Routes>
+    </main>
+  </div>
+);
 
 export default App;
