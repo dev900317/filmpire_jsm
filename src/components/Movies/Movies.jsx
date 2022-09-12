@@ -1,8 +1,6 @@
+/* eslint-disable no-console */
 import React from 'react';
 
-const Movies = () => {
-  console.log('Somethin');
-  return <div>Movies</div>;
-};
+const Movies = () => <div>Movies</div>;
 
 export default Movies;

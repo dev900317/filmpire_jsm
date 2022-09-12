@@ -1,8 +1,5 @@
 import React from 'react';
 
-const MovieInformation = () => {
-  console.log('Something');
-  return <div>MovieInformation</div>;
-};
+const MovieInformation = () => <div>MovieInfomation</div>;
 
 export default MovieInformation;
